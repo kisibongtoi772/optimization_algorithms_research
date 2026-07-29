@@ -1,0 +1,18 @@
+[project]
+name = "cvx-research"
+version = "0.1.0"
+description = "Optimization algorithms research based on Convex Optimization by Stephen Boyd"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+    "matplotlib>=3.8.0",
+    "cvxpy>=1.4.0",
+    "jupyter>=1.0.0",
+    "notebook>=7.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
