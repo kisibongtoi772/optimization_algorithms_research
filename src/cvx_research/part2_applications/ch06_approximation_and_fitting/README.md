@@ -14,7 +14,11 @@ In many fields, we face the problem of finding a model or a mathematical functio
    - Minimizing $\|x\|_1$ promotes **sparsity** (solutions where many entries are exactly zero).
 
 3. **Regularized Approximation:** Instead of just minimizing the error $\|Ax - b\|$, we minimize a combination of the error and a penalty on the size of $x$:
-   $$ \text{minimize} \quad \|Ax - b\|_2^2 + \gamma \|x\| $$
+   
+   $$
+   \text{minimize} \quad \|Ax - b\|_2^2 + \gamma \|x\|
+   $$
+   
    - If we penalize $\|x\|_2^2$, this is **Tikhonov Regularization (Ridge Regression)**, which prevents overfitting.
    - If we penalize $\|x\|_1$, this is **Lasso**, which automatically performs feature selection by driving some coefficients to zero.
 
