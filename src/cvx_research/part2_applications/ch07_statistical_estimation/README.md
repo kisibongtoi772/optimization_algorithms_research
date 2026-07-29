@@ -5,16 +5,16 @@ This chapter explores how convex optimization is deeply intertwined with statist
 
 ### Key Concepts
 1. **Maximum Likelihood Estimation (MLE):** Given observed data $y$, we want to find the parameters $x$ of a statistical model that maximize the probability of observing that data. Taking the negative log of the likelihood often results in a convex function.
-   
-   $$
-   \text{minimize} \quad -\log P(y | x)
-   $$
+
+$$
+\text{minimize} \quad -\log P(y | x)
+$$
 
 2. **Maximum A Posteriori (MAP) Estimation:** Similar to MLE, but incorporates prior knowledge about the parameters $x$ (acting as regularization).
-   
-   $$
-   \text{minimize} \quad -\log P(y | x) - \log P(x)
-   $$
+
+$$
+\text{minimize} \quad -\log P(y | x) - \log P(x)
+$$
 
 3. **Hypothesis Testing & Detector Design:** Designing optimal rules for classifying signals (e.g., Radar detection, medical testing) often boils down to linear programming or convex optimization to minimize the probability of false alarms or missed detections.
 
