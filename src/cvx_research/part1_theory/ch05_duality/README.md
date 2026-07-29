@@ -5,7 +5,11 @@ Duality is one of the most profound concepts in optimization. Every optimization
 
 ### Key Concepts
 1. **The Lagrangian:** We augment the objective function with a weighted sum of the constraint functions. For a problem with inequality constraints $f_i(x) \le 0$ and equality constraints $h_i(x) = 0$, the Lagrangian is:
-   $$ L(x, \lambda, \nu) = f_0(x) + \sum_{i=1}^m \lambda_i f_i(x) + \sum_{i=1}^p \nu_i h_i(x) $$
+   
+   $$
+   L(x, \lambda, \nu) = f_0(x) + \sum_{i=1}^m \lambda_i f_i(x) + \sum_{i=1}^p \nu_i h_i(x)
+   $$
+   
    where $\lambda \ge 0$ and $\nu$ are the **Lagrange multipliers** (or dual variables).
 
 2. **The Lagrange Dual Function:** $g(\lambda, \nu) = \inf_x L(x, \lambda, \nu)$. 

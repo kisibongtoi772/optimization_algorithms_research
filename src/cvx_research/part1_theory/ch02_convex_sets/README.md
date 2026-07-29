@@ -4,7 +4,10 @@
 This chapter introduces the fundamental geometric building blocks of convex optimization: **Convex Sets**. A set is convex if, for any two points within the set, the straight line segment connecting them also lies entirely within the set. 
 
 Mathematically, a set $C$ is convex if for any $x, y \in C$ and any $\theta$ with $0 \le \theta \le 1$, we have:
-$$ \theta x + (1 - \theta)y \in C $$
+
+$$
+\theta x + (1 - \theta)y \in C
+$$
 
 ### Key Concepts
 1. **Affine Sets:** A set where the line passing through any two distinct points in the set lies entirely in the set. (e.g., lines, planes, hyperplanes).
@@ -22,4 +25,9 @@ Why do we care about convex sets?
 ## Code Example
 See `convex_hulls_and_separations.py` for a visual demonstration of:
 1. Constructing a **Convex Hull** from a set of random points.
+
+![Convex Hull](convex_hull.png)
+
 2. Drawing a **Separating Hyperplane** between two disjoint convex sets.
+
+![Separating Hyperplane](separating_hyperplane.png)

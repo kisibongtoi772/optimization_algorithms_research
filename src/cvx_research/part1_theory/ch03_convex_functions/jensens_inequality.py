@@ -67,6 +67,7 @@ def plot_jensens_inequality():
     plt.grid(True)
     
     plt.tight_layout()
+    plt.savefig("jensens_inequality.png")
     plt.show()
 
 if __name__ == "__main__":

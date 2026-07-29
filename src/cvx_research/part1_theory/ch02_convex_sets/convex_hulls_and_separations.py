@@ -29,6 +29,7 @@ def plot_convex_hull():
     plt.title("Convex Hull of Random Points")
     plt.legend()
     plt.grid(True)
+    plt.savefig("convex_hull.png")
     plt.show()
 
 def plot_separating_hyperplane():
@@ -69,6 +70,7 @@ def plot_separating_hyperplane():
     plt.ylim(0, 7)
     plt.legend()
     plt.grid(True)
+    plt.savefig("separating_hyperplane.png")
     plt.show()
 
 if __name__ == "__main__":
